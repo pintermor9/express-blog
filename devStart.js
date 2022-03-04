@@ -1,7 +1,7 @@
 const nodemon = require("nodemon");
 
 nodemon({
-  script: "express-blog\\server.js",
+  script: "server\\server.js",
   ext: "js json ejs",
 });
 
