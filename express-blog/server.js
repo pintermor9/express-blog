@@ -19,4 +19,6 @@ app.get("/", (req, res) => {
   res.render("index", { posts: posts, admin: req.query.admin || false });
 });
 
-app.listen(3000);
+app.listen(3000, () => 
+  console.log("[server]  App online")
+);
