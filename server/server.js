@@ -14,7 +14,8 @@ app.listen(process.env.PORT, () =>
 
 function get_posts() {
   return [
-     new Post("cím", "leírás", "ez még nem látszik")
+     new Post("cím", "leírás", "ez még nem látszik"), 
+     new Post("cím", "leírás", "ez még nem látszik") 
   ]
 } 
 
