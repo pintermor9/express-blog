@@ -14,23 +14,15 @@ app.listen(process.env.PORT, () =>
 
 function get_posts() {
   return [
-    {
-      title: "Test 1",
-      createdAt: new Date(),
-      description: "description 1",
-    },
-    {
-      title: "Test 2",
-      createdAt: new Date(),
-      description: "description 2",
-    },{
-      title: "Test 3",
-      createdAt: new Date(),
-      description: "descripti3",
-    },{
-      title: "Test 4",
-      createdAt: new Date(),
-      description: "description5",
-    },
+     new Post("cím", "leírás", "ez még nem látszik")
   ]
 } 
+
+class Post {
+  construct (title, description, markdown) {
+    this.title = title
+    this.description = description
+    this.markdown = markdown
+    this.createdAt = new Date() 
+  } 
+}
